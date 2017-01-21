@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import br.com.nuvemapp.exemplostellaboletofx.util.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="298.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.nuvemapp.exemplostellaboletofx.fxml.PrincipalController">
+    <children>
+        
+        <TextField id="nome" fx:id="nome" layoutX="14.0" layoutY="50.0" prefHeight="25.0" prefWidth="355.0" />
+        <MaskTextField id="documento" fx:id="documento" layoutX="14.0" layoutY="92.0" prefHeight="25.0" prefWidth="123.0" />
+        <MaskTextField id="valor" fx:id="valor" layoutX="146.0" layoutY="92.0" prefHeight="25.0" prefWidth="91.0" />
+        <DatePicker fx:id="vencimento" layoutX="246.0" layoutY="92.0" prefHeight="25.0" prefWidth="123.0" />
+        <TextField id="logradouro" fx:id="logradouro" layoutX="14.0" layoutY="134.0" prefHeight="25.0" prefWidth="355.0" />
+        <TextField id="bairro" fx:id="bairro" layoutX="14.0" layoutY="176.0" prefHeight="25.0" prefWidth="106.0" />
+        <MaskTextField id="cep" fx:id="cep" layoutX="125.0" layoutY="176.0" prefHeight="25.0" prefWidth="69.0" />
+        <TextField id="cidade" fx:id="cidade" layoutX="203.0" layoutY="176.0" prefHeight="25.0" prefWidth="91.0" />
+        <ComboBox id="uf" fx:id="uf" layoutX="301.0" layoutY="176.0" prefHeight="25.0" prefWidth="69.0" />
+        <CheckBox id="itau" fx:id="itau" layoutX="17.0" layoutY="213.0" mnemonicParsing="false" text="Itaú (PDF)" />
+        <CheckBox id="brasil" fx:id="brasil" layoutX="116.0" layoutY="213.0" mnemonicParsing="false" text="Banco do Brasil (PDF)" />
+        <CheckBox id="bradesco" fx:id="bradesco" layoutX="267.0" layoutY="213.0" mnemonicParsing="false" text="Bradesco (PDF)" />
+        <Button fx:id="novo" layoutX="14.0" layoutY="238.0" mnemonicParsing="false" onAction="#botaoEmitir" prefHeight="25.0" prefWidth="355.0" text="Emitir" />
+        
+        <Text layoutX="14.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF / CNPJ" />
+        <Text layoutX="14.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço" />
+        <Text layoutX="14.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro" />
+        <Text layoutX="125.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" />
+        <Text layoutX="203.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade" />
+        <Text layoutX="302.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF" />
+        <Text layoutX="246.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de vencimento" />
+        <Text layoutX="146.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor: (99.99)" />
+        <Text layoutX="14.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+        <Text fx:id="status" layoutX="14.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="355.0" />
+        
+        <MenuBar maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="383.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Arquivo">
+                    <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuConfiguracao" text="Ler Arquivo de Retorno Bradesco" />
+                        <MenuItem mnemonicParsing="false" onAction="#menuSair" text="Sair" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      
+        
+    </children>
+</AnchorPane>
