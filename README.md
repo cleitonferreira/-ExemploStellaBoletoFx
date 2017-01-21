@@ -1,8 +1,6 @@
 # ExemploStellaBoletoFx
 Exemplo simples de emissão de Boleto com stella-boleto da Caelum usando JavaFx
 
-* Realiza a busca de informações de um cep predefinido.
-
 
 Referências:
 
