@@ -16,7 +16,6 @@
 
 	<repositories>
 		<properties>
-			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 			<mainClass>br.com.nuvemapp.exemplostellaboletofx.MainApp</mainClass>
 		</properties>
 
